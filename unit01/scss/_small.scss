@@ -1,0 +1,97 @@
+body {
+    background-color: var(--backgroundColor);
+    font-family: var(--body-font);
+}
+
+/** Layout Styles **/
+/** TODO: Style search bar **/
+.container {
+    width: 100vw;
+    max-width: 100%;
+}
+
+.site-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75em;
+    .mobile-menu {
+        display: none;
+    }
+    .menu-toggle {
+        span.material-icons-outlined {
+            margin-right: 0.25em;
+        }
+    }
+    .menu-search {
+        padding: 0.75em;
+        .search-bar {
+            box-shadow: 0 0 10px 4px #ccc;
+            border: none;
+            position: relative;
+            padding: 0.75em;
+            border-radius: 3px;
+        }
+        .search-bar + button {
+            border: none;
+            box-shadow: 1.5em 0 10px 4px #ccc;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            top: 1.75em;
+            right: 1.5em;
+            padding-block: 0.6em;
+            padding-inline: 0.7em;
+            border-radius: 3px;
+        }
+    }
+}
+
+.blog {
+    .blog-grid,
+    h2 {
+        padding: 1em;
+    }
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 1.5em;
+        padding-block: 0;
+    }
+}
+
+/** Content Styles **/
+.site-header-container {
+    .site-info {
+        .logo {
+            width: 150px;
+            padding: 0.75em;
+            img {
+                border-radius: 5px;
+                display: block;
+                object-fit: cover;
+            }
+        }
+        #site-tel-number {
+            display: none;
+        }
+    }
+}
+.site-nav-container {
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        background-color: lightgray;
+        padding: 1em;
+        border-radius: 2px;
+        span {
+            font-size: 1.75rem;
+        }
+        span.material-icons-outlined {
+            font-size: 3rem;
+            font-weight: var(--font-600) !important;
+        }
+    }
+}
