@@ -10,59 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="css/glider.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="application/ld+json">
 
-        {
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Cabot Cruise",
-            "blogArticles": [
-                {
-                    "@type": "blogPost",
-                    "inLanguage": "en-US",
-                    "url": "https://dgm3740.brandonpretelt.com/unit01/blog",
-                    "headline": "Family Fun",
-                    "articleSection":"Uncategorized"
-                },
-                {
-                    "@type": "blogPost",
-                    "inLanguage": "en-US",
-                    "url": "https://dgm3740.brandonpretelt.com/unit01/blog",
-                    "headline": "Dining",
-                    "articleSection":"Uncategorized"
-                },
-                {
-                    "@type": "blogPost",
-                    "inLanguage": "en-US",
-                    "url": "https://dgm3740.brandonpretelt.com/unit01/blog",
-                    "headline": "Snorkeling",
-                    "articleSection":"Uncategorized"
-                },
-                {
-                    "@type": "blogPost",
-                    "inLanguage": "en-US",
-                    "url": "https://dgm3740.brandonpretelt.com/unit01/blog",
-                    "headline": "Beach Relaxation",
-                    "articleSection":"Uncategorized"
-                },
-            ],
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "23 South Main St. Suite 16",
-                "addressLocality": "Lexington",
-                "addressRegion": "VA",
-                "postalCode": "24450",
-                "addressCountry": "US"
-            },
-            "logo": "https://dgm3740.brandonpretelt.com/unit01/images/logo.png",
-            "image": ["https://dgm3740.brandonpretelt.com/unit01/images/logo.png"],
-            "url": "https://dgm3740.brandonpretelt.com/unit01/"
-        }
-    </script>
     <title>Cabot Cruises</title>
-
 </head>
 
 <body>
@@ -71,9 +22,7 @@
             <header class="site-header-container">
                 <nav class="site-nav-container">
                     <div class="menu-toggle">
-                        <span class="material-icons-outlined">
-                            menu
-                        </span>
+                        <span class="material-icons-outlined"> menu </span>
                         <span>Open</span>
                     </div>
                     <ul class="nav mobile-menu">
@@ -85,9 +34,11 @@
                     <div class="menu-search">
                         <input placeholder="Search..." type="search" name="search-bar" id="search-bar"
                             class="search-bar">
-                        <button type="submit"><span class="material-icons-outlined">
+                        <button type="submit">
+                            <span class="material-icons-outlined">
                                 search
-                            </span></button>
+                            </span>
+                        </button>
                     </div>
                 </nav>
                 <div class="site-info">
@@ -98,18 +49,25 @@
                         <a href="tel:1-800-555-1234">1-800-555-1234</a>
                     </div>
                 </div>
-
             </header>
             <section id="hero-section">
                 <!-- https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/tiny-slider.min.js use that instead -->
-                <div class="glider-contain">
-                    <div class="glider">
-                        <div><img src="images/logo.jpg" alt="img src"></div>
-                        <div><img src="images/logo.jpg" alt="img src"></div>
-                        <div><img src="images/logo.jpg" alt="img src"></div>
-                        <div><img src="images/logo.jpg" alt="img src"></div>
+                <div class="slider-container">
+                    <div class="image-slider">
+                        <div>
+                            <img src="images/logo.jpg" alt="img src">
+                        </div>
+                        <div>
+                            <img src="images/logo.jpg" alt="img src">
+                        </div>
+                        <div>
+                            <img src="images/logo.jpg" alt="img src">
+                        </div>
+                        <div>
+                            <img src="images/logo.jpg" alt="img src">
+                        </div>
                     </div>
-                    <div role="tablist" class="dots"></div>
+                    <div class="image-slider-dots-container" aria-label="image slider nav"></div>
                 </div>
                 <!-- <div class="hero">
                     <figure class="hero-img
@@ -117,51 +75,35 @@
                 </div> -->
             </section>
             <section id="blog-section" class="blog">
-                <h2> Recent Blog Articles </h2>
+                <h2>Recent Blog Articles</h2>
                 <div class="blog-grid">
                     <article class="article-card">
                         <figure class="card-content">
-                            <div class="overlay top">
-                                <p>Family Fun</p>
-                            </div>
-                            <div class="overlay bottom">
-                                <p>Feburary 16 <span class="date"></span></p>
-                            </div>
+                            <figcaption>Carnival Cruise Fun</figcaption>
+                            <img src="images/logo.jpg" alt="">
+                            <p class="caption">January 1st, 2021</p>
                         </figure>
-
                     </article>
                     <article class="article-card">
                         <figure class="card-content">
-                            <div class="overlay top">
-                                <p>Family Fun</p>
-                            </div>
-                            <div class="overlay bottom">
-                                <p>Feburary 16 <span class="date"></span></p>
-                            </div>
+                            <figcaption>Carnival Cruise Fun</figcaption>
+                            <img src="images/logo.jpg" alt="">
+                            <p class="caption">May 1st, 2021</p>
                         </figure>
-
                     </article>
                     <article class="article-card">
                         <figure class="card-content">
-                            <div class="overlay top">
-                                <p>Family Fun</p>
-                            </div>
-                            <div class="overlay bottom">
-                                <p>Feburary 16 <span class="date"></span></p>
-                            </div>
+                            <figcaption>Carnival Cruise Fun</figcaption>
+                            <img src="images/logo.jpg" alt="">
+                            <p class="caption">June 1st, 2021</p>
                         </figure>
-
                     </article>
                     <article class="article-card">
                         <figure class="card-content">
-                            <div class="overlay top">
-                                <p>Family Fun</p>
-                            </div>
-                            <div class="overlay bottom">
-                                <p>Feburary 16 <span class="date"></span></p>
-                            </div>
+                            <figcaption>Carnival Cruise Fun</figcaption>
+                            <img src="images/logo.jpg" alt="">
+                            <p class="caption">August 1st, 2021</p>
                         </figure>
-
                     </article>
                 </div>
             </section>
@@ -170,7 +112,7 @@
             <div class="footer-grid">
                 <section class="contact-section">
                     <div class="contact-header">
-                        <h2> Contact Us </h2>
+                        <h2>Contact Us</h2>
                     </div>
                     <div class="contact-content">
                         <div class="address-block">
@@ -179,54 +121,89 @@
                                 23 South Main St. Suite 16 <br>
                                 Lexington, VA 24450
                             </address>
-
                         </div>
                         <div class="phone-block">
-                            <h3> Phone: </h3>
+                            <h2>Phone:</h2>
                             <a href="tel:1-800-555-1234">1-800-555-1234</a>
                         </div>
                         <div class="hours-block">
-                            <h3>Hours of Operation: </h3>
-                            <p> Monday - Friday 9am - 4pm </p>
+                            <h2>Hours of Operation:</h2>
+                            <p>Monday - Friday 9am - 4pm</p>
                         </div>
-
                     </div>
                 </section>
                 <section class="newsletter-section">
                     <div class="newsletter-block">
-                        <h3> Newsletter </h3>
-                        <p> Subscribe to our email list and stay up-to-date with our hottest offers and latest
-                            specials. </p>
+                        <h2>Newsletter</h2>
+                        <p>
+                            Subscribe to our email list and stay up-to-date
+                            with our hottest offers and latest specials.
+                        </p>
                         <label for="signup" aria-label="signup"></label>
                         <input type="text" id="signup" naem="signup" class="signup">
                     </div>
                 </section>
                 <section class="about-section">
                     <div class="about-block">
-                        <h3> Why Cabot Cruizes </h3>
-                        <p>Cabot Cruizes is a travel agency providing the best cruise deals on our online travel
-                            website. We can help you with all inclusive vacations including discounted cruises.</p>
-                        <p> We do not sell travel to residents of Delaware, Iowa, Florida, Hawaii and Washington state
-                            because those states are just weird. If you are a resident of one of these states, call your
-                            congressman and tell them to change the regulaMons.</p>
+                        <h2>Why Cabot Cruizes</h2>
+                        <p>
+                            Cabot Cruizes is a travel agency providing the
+                            best cruise deals on our online travel website.
+                            We can help you with all inclusive vacations
+                            including discounted cruises.
+                        </p>
+                        <p>
+                            We do not sell travel to residents of Delaware,
+                            Iowa, Florida, Hawaii and Washington state
+                            because those states are just weird. If you are
+                            a resident of one of these states, call your
+                            congressman and tell them to change the
+                            regulaMons.
+                        </p>
                     </div>
                 </section>
             </div>
-            <div class="social-links">
-                <a href="#">facebook</a>
-                <a href="#">youtube</a>
-                <a href="#">instagram</a>
-                <a href="#">pinterest</a>
-                <a href="#">twitter</a>
+            <div class="social-copy-container">
+                <div class="social-links">
+                    <a href="#">facebook</a>
+                    <a href="#">youtube</a>
+                    <a href="#">instagram</a>
+                    <a href="#">pinterest</a>
+                    <a href="#">twitter</a>
+                </div>
+                <small class="copyright-info">
+                    &copy; <span class="date"></span> Brandon Pretelt &bull;
+                    <a href="https://brandonpretelt.com">brandonpretelt(dot)com</a>
+                </small>
             </div>
-            <small class="copyright-info">
-                &copy; <span class="date"></span> Brandon Pretelt &bull; <a
-                    href="https://brandonpretelt.com">brandonpretelt(dot)com</a>
-            </small>
         </footer>
     </div>
-    <script src="glider.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery/image-slider.js"></script>
+    <script src="js/script.js"></script>
+    <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "TravelAgency",
+                "name": "Cabot Cruise",
+
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "23 South Main St. Suite 16",
+                    "addressLocality": "Lexington",
+                    "addressRegion": "VA",
+                    "postalCode": "24450",
+                    "addressCountry": "US"
+                },
+                "logo": "https://dgm3740.brandonpretelt.com/unit01/images/logo.png",
+                "image": [
+                    "https://dgm3740.brandonpretelt.com/unit01/images/logo.png"
+                ],
+                "url": "https://dgm3740.brandonpretelt.com/unit01/"
+            }
+        </script>
 </body>
 
 </html>

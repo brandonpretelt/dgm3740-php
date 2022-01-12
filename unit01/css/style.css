@@ -80,6 +80,10 @@ select {
   --font-300: 300;
   --font-400: 400;
   --font-600: 600;
+  --text-sm: 0.9rem;
+  --text-md: 1.75rem;
+  --text-lg: 2rem;
+  --text-xl: 3rem;
 }
 
 body {
@@ -108,27 +112,35 @@ body {
 }
 .site-nav-container .menu-search {
   padding: 0.75em;
+  /* iOS stuff */
 }
 .site-nav-container .menu-search .search-bar {
   box-shadow: 0 0 10px 4px #ccc;
   border: none;
   position: relative;
   padding: 0.75em;
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .site-nav-container .menu-search .search-bar + button {
   border: none;
-  box-shadow: 1.5em 0 10px 4px #ccc;
   position: absolute;
   background-color: #333;
   color: #fff;
-  top: 1.75em;
+  top: 1.5em;
   right: 1.5em;
-  padding-block: 0.6em;
-  padding-inline: 0.7em;
-  border-radius: 3px;
+  padding: 0.69em;
+  padding-bottom: 0.6em;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.site-nav-container .menu-search .search-bar {
+  -webkit-appearance: none;
 }
 
+.blog {
+  margin-bottom: 1.75em;
+}
 .blog .blog-grid,
 .blog h2 {
   padding: 1em;
@@ -139,6 +151,17 @@ body {
   place-items: center;
   gap: 1.5em;
   padding-block: 0;
+}
+
+footer section {
+  margin-block: 1.5em;
+}
+footer .contact-section div {
+  margin-block: 0.75em;
+}
+footer .social-copy-container {
+  padding: 0.75em;
+  text-align: center;
 }
 
 /** Content Styles **/
@@ -164,9 +187,71 @@ body {
   border-radius: 2px;
 }
 .site-nav-container .menu-toggle span {
-  font-size: 1.75rem;
+  font-size: var(--text-md);
 }
 .site-nav-container .menu-toggle span.material-icons-outlined {
-  font-size: 3rem;
+  font-size: var(--text-lg);
   font-weight: var(--font-600) !important;
+}
+
+.slider-container .image-slider-dots-container {
+  /* slightly from https://stackoverflow.com/questions/1726085/removing-text-from-html-buttons-on-all-browsers */
+}
+.slider-container .image-slider-dots-container .slick-dots {
+  display: flex !important;
+  justify-content: space-evenly;
+  list-style: none !important;
+}
+.slider-container .image-slider-dots-container .slick-dots li {
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.slider-container .image-slider-dots-container button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  text-indent: -9999em;
+}
+.slider-container .image-slider-dots-container .slick-active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray !important;
+}
+
+.blog-grid .card-content {
+  display: flex;
+  flex-flow: column;
+  max-width: 220px;
+  margin: auto;
+}
+.blog-grid .card-content figcaption,
+.blog-grid .card-content .caption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 0.53em;
+  text-align: center;
+}
+
+footer .footer-grid {
+  background-color: #cccccc;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  max-width: 100vw;
+  padding: 0.15em 0.75em;
+}
+footer section h2 {
+  font-size: var(--text-md);
+}
+footer .contact-section div address,
+footer .contact-section div a,
+footer .contact-section div p {
+  --text-md: 1.2rem;
+  font-size: var(--text-md);
 }
