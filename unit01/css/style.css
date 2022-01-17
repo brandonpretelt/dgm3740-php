@@ -123,6 +123,7 @@ body {
   border-bottom-left-radius: 3px;
 }
 .site-nav-container .menu-search .search-bar + button {
+  cursor: pointer;
   border: none;
   position: absolute;
   background-color: #333;
@@ -163,8 +164,19 @@ footer .social-copy-container {
   padding: 0.75em;
   text-align: center;
 }
+footer .social-copy-container .social-links {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /** Content Styles **/
+.site-header-container .site-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1em;
+  margin-bottom: 0.64em;
+}
 .site-header-container .site-info .logo {
   width: 150px;
   padding: 0.75em;
@@ -175,7 +187,11 @@ footer .social-copy-container {
   object-fit: cover;
 }
 .site-header-container .site-info #site-tel-number {
-  display: none;
+  transform: translate(-1em, -3.125em);
+}
+.site-header-container .site-info #site-tel-number a {
+  font-size: 1.5rem;
+  color: #000;
 }
 
 .site-nav-container .menu-toggle {
@@ -194,6 +210,10 @@ footer .social-copy-container {
   font-weight: var(--font-600) !important;
 }
 
+.slider-container {
+  width: min(350px, 100%);
+  margin: 0 auto;
+}
 .slider-container .image-slider-dots-container {
   /* slightly from https://stackoverflow.com/questions/1726085/removing-text-from-html-buttons-on-all-browsers */
 }
@@ -207,6 +227,7 @@ footer .social-copy-container {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .slider-container .image-slider-dots-container button {
   border: none;
@@ -254,4 +275,30 @@ footer .contact-section div a,
 footer .contact-section div p {
   --text-md: 1.2rem;
   font-size: var(--text-md);
+}
+footer .newsletter-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .newsletter-block p {
+  margin-block-end: 1em;
+}
+footer .newsletter-block .signup {
+  max-width: 100%;
+  width: 90vw;
+  margin: 0.75em auto;
+  padding: 0.55em;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+}
+footer .newsletter-block .signup + button {
+  cursor: pointer;
+  width: 90vw;
+  max-width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  font-size: 1.6rem;
 }

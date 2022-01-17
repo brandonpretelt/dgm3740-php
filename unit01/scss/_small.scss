@@ -34,6 +34,7 @@ body {
             border-bottom-left-radius: 3px;
         }
         .search-bar + button {
+            cursor: pointer;
             border: none;
             // box-shadow: 1.5em 0 10px 4px #ccc;
             position: absolute;
@@ -80,12 +81,21 @@ footer {
     .social-copy-container {
         padding: 0.75em;
         text-align: center;
+        .social-links {
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
 }
 
 /** Content Styles **/
 .site-header-container {
     .site-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 1em;
+        margin-bottom: 0.64em;
         .logo {
             width: 150px;
             padding: 0.75em;
@@ -96,7 +106,11 @@ footer {
             }
         }
         #site-tel-number {
-            display: none;
+            transform: translate(-1em, -3.125em);
+            a {
+                font-size: 1.5rem;
+                color: #000;
+            }
         }
     }
 }
@@ -119,6 +133,8 @@ footer {
 }
 
 .slider-container {
+    width: min(350px, 100%);
+    margin: 0 auto;
     .image-slider-dots-container {
         .slick-dots {
             display: flex !important;
@@ -130,6 +146,7 @@ footer {
             border-radius: 50%;
             width: 20px;
             height: 20px;
+            cursor: pointer;
         }
         /* slightly from https://stackoverflow.com/questions/1726085/removing-text-from-html-buttons-on-all-browsers */
         button {
@@ -189,6 +206,32 @@ footer {
                 --text-md: 1.2rem;
                 font-size: var(--text-md);
             }
+        }
+    }
+    .newsletter-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            margin-block-end: 1em;
+        }
+        .signup {
+            max-width: 100%;
+            width: 90vw;
+            margin: 0.75em auto;
+            padding: 0.55em;
+            border-radius: 10px;
+            border: none;
+            font-size: 1.2rem;
+        }
+        .signup + button {
+            cursor: pointer;
+            width: 90vw;
+            max-width: 100%;
+            border-radius: 10px;
+            border: none;
+            margin: 0 auto;
+            font-size: 1.6rem;
         }
     }
 }
