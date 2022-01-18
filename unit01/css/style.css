@@ -103,12 +103,81 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0.75em;
+  transition: background 100ms ease-in-out;
+  position: relative;
 }
 .site-nav-container .mobile-menu {
-  display: none;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: gray;
+  position: absolute;
+  top: -1em;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-1000px);
+  height: 100vh;
+  width: 300px;
+  z-index: 2;
+  list-style: none;
+  transition: transform 450ms ease-in-out;
+  overflow: initial;
+}
+.site-nav-container .mobile-menu span.material-icons-outlined.close-menu {
+  display: block;
+  margin-top: 1em;
+  transform: translateX(190px);
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.site-nav-container .mobile-menu span.material-icons-outlined.open-dropdown {
+  display: block;
+  transition: transform 200ms ease-in-out;
+}
+.site-nav-container .mobile-menu .rotate {
+  transform: rotate(180deg);
+}
+.site-nav-container .mobile-menu .nav-link {
+  margin-top: 2em;
+  padding: 0.75em;
+}
+.site-nav-container .mobile-menu .nav-link:nth-child(4) .li-heading {
+  font-size: 1.4rem !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down {
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  margin-bottom: -32px;
+  list-style: none;
+  transition: height 100ms ease-in-out, opacity 25ms ease-in;
+}
+.site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down li {
+  max-width: 100%;
+}
+.site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down a {
+  font-size: 1.2rem;
+}
+.site-nav-container .mobile-menu .nav-link:nth-child(4) .open-dropdown-links {
+  display: block;
+  height: auto;
+  opacity: 1;
+}
+.site-nav-container .mobile-menu .nav-link a {
+  font-size: 1.4rem;
+  color: #000;
+  text-decoration: none;
 }
 .site-nav-container .menu-toggle span.material-icons-outlined {
   margin-right: 0.25em;
+}
+.site-nav-container .open-menu {
+  transform: translateX(0px);
+  overflow: hidden;
 }
 .site-nav-container .menu-search {
   padding: 0.75em;
@@ -167,6 +236,9 @@ footer .social-copy-container {
 footer .social-copy-container .social-links {
   display: flex;
   justify-content: space-evenly;
+}
+footer .about-block p {
+  margin-bottom: 1em;
 }
 
 /** Content Styles **/
