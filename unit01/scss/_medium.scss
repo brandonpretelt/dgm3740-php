@@ -1,0 +1,94 @@
+@media (min-width: 700px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .site-nav-container {
+        justify-content: flex-start;
+        padding: 0.25em;
+        inset: 0;
+        background-color: gray;
+
+        .mobile-menu {
+            flex-flow: row nowrap;
+            position: static;
+            inset: 0;
+            transform: translateX(0px);
+            height: auto;
+            width: 100%;
+            span.material-icons-outlined.close-menu {
+                display: none;
+            }
+            .nav-link {
+                margin-top: 0em;
+            }
+            .nav-link:nth-child(4) {
+                .drop-down {
+                    display: none;
+                    position: absolute;
+                    border-radius: 10px;
+                    background-color: gray;
+                    top: 50px;
+                    box-shadow: 0 0 10px rgba(0 0 0 / 0.5);
+                    margin-bottom: -32px;
+                    list-style: none;
+                    transition: height 100ms ease-in-out, opacity 25ms ease-in;
+                }
+                .open-dropdown-links {
+                    display: block;
+                    height: auto;
+                    opacity: 1;
+                }
+            }
+        }
+        .menu-toggle {
+            display: none;
+            span.material-icons-outlined {
+                display: none;
+            }
+        }
+
+        .menu-search {
+            padding: 0.75em;
+            .search-bar {
+                box-shadow: 0 0 10px 4px #ccc;
+                border: none;
+                position: relative;
+                padding: 0.75em;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+            .search-bar + button {
+                cursor: pointer;
+                border: none;
+                position: absolute;
+                background-color: #333;
+                color: #fff;
+                top: 1.5em;
+                right: 1.5em;
+                padding: 0.69em;
+                padding-bottom: 0.6em;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+        }
+    }
+    .header-grid {
+        width: 1200px;
+        max-width: 100%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        .site-header-container {
+            grid-row: 1;
+            grid-column: 1 / -1;
+        }
+        .site-nav-container {
+            height: 100px;
+            grid-row: 2;
+            grid-column: span 3;
+        }
+    }
+}

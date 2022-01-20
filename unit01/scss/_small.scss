@@ -66,7 +66,6 @@ body {
                 justify-content: space-between;
             }
             .drop-down {
-                // display: none;
                 height: 0;
                 padding: 0;
                 opacity: 0;
@@ -79,11 +78,11 @@ body {
                 a {
                     font-size: 1.2rem;
                 }
-            }
-            .open-dropdown-links {
-                display: block;
-                height: auto;
-                opacity: 1;
+                .open-dropdown-links {
+                    display: block;
+                    height: auto;
+                    opacity: 1;
+                }
             }
         }
         .nav-link a {
