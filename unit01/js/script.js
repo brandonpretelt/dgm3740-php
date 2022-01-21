@@ -7,6 +7,7 @@ const openBtn = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.mobile-menu');
 const dropdown = document.querySelector('.open-dropdown');
 const dropdownMenu = document.querySelector('.drop-down');
+const liToggle = document.querySelector('.li-heading');
 
 openBtn.addEventListener('click', () => {
     menu.classList.toggle('open-menu');
@@ -22,13 +23,18 @@ closeBtn.addEventListener('click', () => {
     }
 });
 
+liToggle.addEventListener('click', () => {
+    dropdown.classList.toggle('rotate');
+    dropdownMenu.classList.toggle('open-dropdown-links');
+});
+
 dropdown.addEventListener('click', () => {
     dropdown.classList.toggle('rotate');
     dropdownMenu.classList.toggle('open-dropdown-links');
 });
 
 document.addEventListener('click', (e) => {
-    if (e.target !== dropdown) {
+    if (e.target !== dropdown && e.target !== liToggle) {
         dropdown.classList.remove('rotate');
         dropdownMenu.classList.remove('open-dropdown-links');
     }
