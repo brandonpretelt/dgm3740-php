@@ -76,8 +76,9 @@ select {
 /** END CSS RESET **/
 :root {
   --backgroundColor: hsl(191, 191, 191);
+  --brandColor: rgb(0, 70, 135);
   --body-font: "Oswald", sans-serif;
-  --base-font-size: 18px;
+  --base-font-size: 20px;
   --font-300: 300;
   --font-400: 400;
   --font-600: 600;
@@ -97,12 +98,12 @@ body {
 /** TODO: Style search bar **/
 .container {
   width: 100vw;
+  background-color: #badeff;
   max-width: 100%;
 }
 
 .site-nav-container {
-  --backgroundColor: rgb(0, 70, 135);
-  background-color: var(--backgroundColor);
+  background-color: var(--brandColor);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -164,8 +165,7 @@ body {
   justify-content: space-between;
 }
 .site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down {
-  --backgroundColor: rgb(0, 70, 135);
-  background-color: var(--backgroundColor) !important;
+  background-color: var(--brandColor) !important;
   height: 0;
   padding: 0;
   opacity: 0;
@@ -315,10 +315,13 @@ footer .about-block p {
 }
 
 .slider-container {
-  width: min(350px, 100%);
+  width: 350px;
+  height: 350px;
   margin: 0 auto;
 }
 .slider-container .image-slider-dots-container {
+  max-width: 400px;
+  margin: 0 auto;
   /* slightly from https://stackoverflow.com/questions/1726085/removing-text-from-html-buttons-on-all-browsers */
 }
 .slider-container .image-slider-dots-container .slick-dots {
@@ -348,6 +351,10 @@ footer .about-block p {
   background-color: gray !important;
 }
 
+.blog {
+  margin-top: 4em;
+}
+
 .blog-grid .card-content {
   display: flex;
   flex-flow: column;
@@ -359,12 +366,13 @@ footer .about-block p {
   background-color: #222;
   color: #fff;
   font: italic smaller sans-serif;
-  padding: 0.53em;
+  padding: 0.75em;
   text-align: center;
 }
 
 footer .footer-grid {
-  background-color: #cccccc;
+  background-color: var(--brandColor);
+  color: #e6e6e6;
   padding: 0;
   width: 100%;
   margin: 0;
@@ -379,6 +387,10 @@ footer .contact-section div a,
 footer .contact-section div p {
   --text-md: 1.2rem;
   font-size: var(--text-md);
+}
+footer .phone-block a {
+  color: #d9d9d9;
+  font-weight: bold;
 }
 footer .newsletter-block {
   display: flex;
@@ -405,7 +417,7 @@ footer .newsletter-block .signup + button {
   border: none;
   margin: 0 auto;
   font-size: 1.6rem;
-  background-color: gray;
+  background-color: #badeff;
 }
 
 @media (min-width: 700px) {
@@ -483,7 +495,7 @@ footer .newsletter-block .signup + button {
   }
 
   .site-nav-container .menu-search .search-bar + button {
-    top: 1.2em;
+    top: 1em;
     right: 1em;
     padding-top: none;
   }
@@ -494,7 +506,6 @@ footer .newsletter-block .signup + button {
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
   }
 
   .header-grid .site-header-container {
@@ -506,6 +517,11 @@ footer .newsletter-block .signup + button {
     height: 100px;
     grid-row: 2;
     grid-column: span 3;
+  }
+
+  .slider-container {
+    width: 1200px;
+    height: 350px !important;
   }
 
   .blog .blog-grid {
@@ -538,6 +554,11 @@ footer .newsletter-block .signup + button {
     grid-row: 2/-1;
     grid-column: span 4;
     transform: translateY(-100px);
+  }
+
+  footer .social-links {
+    margin: 0 auto;
+    max-width: 500px;
   }
 }
 @media (min-width: 960px) {

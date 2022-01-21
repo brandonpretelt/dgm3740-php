@@ -78,18 +78,34 @@
                 <!-- https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/tiny-slider.min.js use that instead -->
                 <div class="slider-container">
                     <div class="image-slider">
-                        <div>
-                            <img src="images/logo.png" alt="img src" loading="lazy">
-                        </div>
-                        <div>
-                            <img src="images/logo.png" alt="img src" loading="lazy">
-                        </div>
-                        <div>
-                            <img src="images/logo.png" alt="img src" loading="lazy">
-                        </div>
-                        <div>
-                            <img src="images/logo.png" alt="img src" loading="lazy">
-                        </div>
+                        <picture>
+                            <source srcset="images/slider-images/slide_1h.jpg" media="(min-width: 700px)"
+                                height="350px">
+                            <img srcset="images/slider-images/slide_1s.jpg" alt="cruise 1"
+                                src="images/slider-images/slide_1s.jpg">
+                        </picture>
+
+                        <picture>
+                            <source srcset="images/slider-images/slide_2h.jpg" media="(min-width: 700px)"
+                                height="350px">
+                            <img srcset="images/slider-images/slide_2s.jpg" alt="cruise 2"
+                                src="images/slider-images/slide_2s.jpg">
+                        </picture>
+
+                        <picture>
+                            <source srcset="images/slider-images/slide_3h.jpg" media="(min-width: 700px)"
+                                height="350px">
+                            <img srcset="images/slider-images/slide_3s.jpg" alt="cruise 3"
+                                src="images/slider-images/slide_3s.jpg">
+                        </picture>
+
+                        <picture>
+                            <source srcset="images/slider-images/slide_4h.jpg" media="(min-width: 700px)"
+                                height="350px">
+                            <img srcset="images/slider-images/slide_4s.jpg" alt="cruise 4"
+                                src="images/slider-images/slide_4s.jpg">
+                        </picture>
+
                     </div>
                     <div class="image-slider-dots-container" aria-label="image slider nav"></div>
                 </div>
@@ -103,7 +119,7 @@
                 <div class="blog-grid">
                     <article class="article-card">
                         <figure class="card-content">
-                            <figcaption>Carnival Cruise Fun</figcaption>
+                            <figcaption>Carnival Cruise Fun For The Family</figcaption>
                             <img src="images/logo.jpg" alt="" loading="lazy">
                             <p class="caption">January 1st, 2021</p>
                         </figure>

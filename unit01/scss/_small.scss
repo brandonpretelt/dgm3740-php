@@ -8,12 +8,12 @@ body {
 /** TODO: Style search bar **/
 .container {
     width: 100vw;
+    background-color: lighten(rgb(0, 70, 135), 60%);
     max-width: 100%;
 }
 
 .site-nav-container {
-    --backgroundColor: rgb(0, 70, 135);
-    background-color: var(--backgroundColor);
+    background-color: var(--brandColor);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,8 +80,7 @@ body {
                 justify-content: space-between;
             }
             .drop-down {
-                --backgroundColor: rgb(0, 70, 135);
-                background-color: var(--backgroundColor) !important;
+                background-color: var(--brandColor) !important;
                 height: 0;
                 padding: 0;
                 opacity: 0;
@@ -253,9 +252,12 @@ footer {
 }
 
 .slider-container {
-    width: min(350px, 100%);
+    width: 350px;
+    height: 350px;
     margin: 0 auto;
     .image-slider-dots-container {
+        max-width: 400px;
+        margin: 0 auto;
         .slick-dots {
             display: flex !important;
             justify-content: space-evenly;
@@ -286,6 +288,10 @@ footer {
     }
 }
 
+.blog {
+    margin-top: 4em;
+}
+
 .blog-grid {
     .card-content {
         display: flex;
@@ -298,7 +304,7 @@ footer {
             background-color: #222;
             color: #fff;
             font: italic smaller sans-serif;
-            padding: 0.53em;
+            padding: 0.75em;
             text-align: center;
         }
     }
@@ -306,7 +312,9 @@ footer {
 
 footer {
     .footer-grid {
-        background-color: darken(hsl(100, 0%, 90%), 10%);
+        background-color: var(--brandColor);
+        color: hsl(0, 0%, 90%);
+        // background-color: darken(hsl(100, 0%, 90%), 10%);
         padding: 0;
         width: 100%;
         margin: 0;
@@ -328,6 +336,13 @@ footer {
             }
         }
     }
+    .phone-block {
+        a {
+            color: hsl(0, 0%, 85%);
+            font-weight: bold;
+        }
+    }
+
     .newsletter-block {
         display: flex;
         flex-direction: column;
@@ -352,7 +367,7 @@ footer {
             border: none;
             margin: 0 auto;
             font-size: 1.6rem;
-            background-color: gray;
+            background-color: lighten(rgb(0, 70, 135), 60%);
         }
     }
 }
