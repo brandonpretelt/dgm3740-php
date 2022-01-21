@@ -115,6 +115,8 @@ body {
   color: #fff;
 }
 .site-nav-container .mobile-menu {
+  --backgroundColor: rgb(0, 70, 135);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-flow: column nowrap;
   position: absolute;
@@ -140,6 +142,7 @@ body {
   transform: translateX(190px);
   width: 100%;
   font-weight: bold;
+  color: #fefefe;
   cursor: pointer;
 }
 .site-nav-container .mobile-menu span.material-icons-outlined.open-dropdown {
@@ -161,6 +164,8 @@ body {
   justify-content: space-between;
 }
 .site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down {
+  --backgroundColor: rgb(0, 70, 135);
+  background-color: var(--backgroundColor) !important;
   height: 0;
   padding: 0;
   opacity: 0;
@@ -174,22 +179,32 @@ body {
 .site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down a {
   font-size: 1.2rem;
 }
-.site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down .open-dropdown-links {
+.site-nav-container .mobile-menu .nav-link:nth-child(4) .open-dropdown-links {
   display: block;
-  height: auto;
-  opacity: 1;
+  opacity: 1 !important;
+  height: auto !important;
 }
 .site-nav-container .mobile-menu .nav-link a {
   font-size: 1.4rem;
   color: #000;
   text-decoration: none;
 }
+.site-nav-container .menu-toggle {
+  background-color: #27aae1 !important;
+  transition: border-radius 100ms ease-in-out;
+}
+.site-nav-container .menu-toggle:hover {
+  border-radius: 20px;
+}
+.site-nav-container .menu-toggle span,
+.site-nav-container .menu-toggle span.material-icons-outlined {
+  color: #fefefe;
+}
 .site-nav-container .menu-toggle span.material-icons-outlined {
   margin-right: 0.25em;
 }
 .site-nav-container .open-menu {
   transform: translateX(0px);
-  overflow: hidden;
 }
 .site-nav-container .menu-search {
   margin-right: 0.2em;
@@ -404,8 +419,8 @@ footer .newsletter-block .signup + button {
     justify-content: flex-start;
     padding: 0.25em;
     inset: 0;
-    width: 1200px;
   }
+
   .site-nav-container .mobile-menu {
     flex-flow: row nowrap;
     position: static;
@@ -413,13 +428,17 @@ footer .newsletter-block .signup + button {
     transform: translateX(0px);
     height: auto;
     width: 100%;
+    box-shadow: none;
   }
+
   .site-nav-container .mobile-menu span.material-icons-outlined.close-menu {
     display: none;
   }
+
   .site-nav-container .mobile-menu .nav-link {
     margin-top: 0em;
   }
+
   .site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down {
     display: none;
     position: absolute;
@@ -431,30 +450,38 @@ footer .newsletter-block .signup + button {
     list-style: none;
     transition: height 100ms ease-in-out, opacity 25ms ease-in;
   }
+
   .site-nav-container .mobile-menu .nav-link:nth-child(4) .open-dropdown-links {
     display: block;
     height: auto;
     opacity: 1;
   }
+
   .site-nav-container .menu-toggle {
     display: none;
   }
+
   .site-nav-container .menu-toggle span.material-icons-outlined {
     display: none;
   }
+
   .site-nav-container .menu-search {
     padding: 0.75em;
   }
+
   .site-nav-container .menu-search .search-bar {
     padding: 0.75em;
   }
+
   .site-nav-container .menu-search .search-bar {
     width: 25vw;
     transition: width 200ms ease-in;
   }
+
   .site-nav-container .menu-search .search-bar:focus {
     width: 35vw;
   }
+
   .site-nav-container .menu-search .search-bar + button {
     top: 1.2em;
     right: 1em;
@@ -469,21 +496,16 @@ footer .newsletter-block .signup + button {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
   .header-grid .site-header-container {
     grid-row: 1;
     grid-column: 1/-1;
   }
+
   .header-grid .site-nav-container {
     height: 100px;
     grid-row: 2;
     grid-column: span 3;
-  }
-
-  .slider-container {
-    width: 1200px;
-  }
-  .slider-container .image-slider-dots-container {
-    width: 350px;
   }
 
   .blog .blog-grid {
@@ -499,27 +521,23 @@ footer .newsletter-block .signup + button {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 31.25rem;
   }
+
   footer .contact-section {
     grid-column: 1/span 2;
     grid-row: 1;
     height: fit-content;
   }
+
   footer .newsletter-section {
     grid-column: 3/span 2;
     width: 50vw;
     padding-inline-end: 4em;
   }
+
   footer .about-section {
     grid-row: 2/-1;
     grid-column: span 4;
     transform: translateY(-100px);
-  }
-  footer .social-copy-container {
-    margin: 0 auto;
-    max-width: 400px;
-  }
-  footer .social-copy-container .social-links a {
-    padding-inline: 1.5em;
   }
 }
 @media (min-width: 960px) {
