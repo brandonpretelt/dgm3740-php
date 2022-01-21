@@ -75,8 +75,9 @@ select {
 }
 /** END CSS RESET **/
 :root {
-  --backgroundColor: hsl(100, 0%, 90%);
+  --backgroundColor: hsl(191, 191, 191);
   --body-font: "Oswald", sans-serif;
+  --base-font-size: 18px;
   --font-300: 300;
   --font-400: 400;
   --font-600: 600;
@@ -89,6 +90,7 @@ select {
 body {
   background-color: var(--backgroundColor);
   font-family: var(--body-font);
+  font-size: var(--base-font-size) !important;
 }
 
 /** Layout Styles **/
@@ -99,19 +101,25 @@ body {
 }
 
 .site-nav-container {
+  --backgroundColor: rgb(0, 70, 135);
+  background-color: var(--backgroundColor);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.75em;
   transition: background 100ms ease-in-out;
   position: relative;
+  max-width: 100%;
+}
+.site-nav-container a {
+  color: #fff;
 }
 .site-nav-container .mobile-menu {
   display: flex;
   flex-flow: column nowrap;
-  background-color: gray;
   position: absolute;
   top: -1em;
+  background-color: var(--backgroundColor);
   bottom: 0;
   left: 0;
   transform: translateX(-1000px);
@@ -121,6 +129,10 @@ body {
   list-style: none;
   transition: transform 450ms ease-in-out;
   overflow: initial;
+}
+.site-nav-container .mobile-menu a,
+.site-nav-container .mobile-menu .li-heading {
+  color: #fff !important;
 }
 .site-nav-container .mobile-menu span.material-icons-outlined.close-menu {
   display: block;
@@ -180,29 +192,32 @@ body {
   overflow: hidden;
 }
 .site-nav-container .menu-search {
+  margin-right: 0.2em;
   padding: 0.75em;
   /* iOS stuff */
 }
 .site-nav-container .menu-search .search-bar {
-  box-shadow: 0 0 10px 4px #ccc;
+  width: 50vw;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
   border: none;
   position: relative;
   padding: 0.75em;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 .site-nav-container .menu-search .search-bar + button {
   cursor: pointer;
   border: none;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
   position: absolute;
   background-color: #333;
   color: #fff;
   top: 1.5em;
-  right: 1.5em;
-  padding: 0.69em;
-  padding-bottom: 0.6em;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  right: 0.7em;
+  padding: 1em 0.75em;
+  padding-bottom: 0.5em;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .site-nav-container .menu-search .search-bar {
   -webkit-appearance: none;
@@ -226,7 +241,9 @@ body {
 footer section {
   margin-block: 1.5em;
 }
-footer .contact-section div {
+footer .contact-section div,
+footer .newsletter-block div,
+footer .about-block div {
   margin-block: 0.75em;
 }
 footer .social-copy-container {
@@ -373,6 +390,7 @@ footer .newsletter-block .signup + button {
   border: none;
   margin: 0 auto;
   font-size: 1.6rem;
+  background-color: gray;
 }
 
 @media (min-width: 700px) {
@@ -386,7 +404,7 @@ footer .newsletter-block .signup + button {
     justify-content: flex-start;
     padding: 0.25em;
     inset: 0;
-    background-color: gray;
+    width: 1200px;
   }
   .site-nav-container .mobile-menu {
     flex-flow: row nowrap;
@@ -428,25 +446,19 @@ footer .newsletter-block .signup + button {
     padding: 0.75em;
   }
   .site-nav-container .menu-search .search-bar {
-    box-shadow: 0 0 10px 4px #ccc;
-    border: none;
-    position: relative;
     padding: 0.75em;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+  }
+  .site-nav-container .menu-search .search-bar {
+    width: 25vw;
+    transition: width 200ms ease-in;
+  }
+  .site-nav-container .menu-search .search-bar:focus {
+    width: 35vw;
   }
   .site-nav-container .menu-search .search-bar + button {
-    cursor: pointer;
-    border: none;
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    top: 1.5em;
-    right: 1.5em;
-    padding: 0.69em;
-    padding-bottom: 0.6em;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    top: 1.2em;
+    right: 1em;
+    padding-top: none;
   }
 
   .header-grid {
@@ -465,5 +477,88 @@ footer .newsletter-block .signup + button {
     height: 100px;
     grid-row: 2;
     grid-column: span 3;
+  }
+
+  .slider-container {
+    width: 1200px;
+  }
+  .slider-container .image-slider-dots-container {
+    width: 350px;
+  }
+
+  .blog .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1.5em;
+    padding-block: 0;
+  }
+
+  footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 31.25rem;
+  }
+  footer .contact-section {
+    grid-column: 1/span 2;
+    grid-row: 1;
+    height: fit-content;
+  }
+  footer .newsletter-section {
+    grid-column: 3/span 2;
+    width: 50vw;
+    padding-inline-end: 4em;
+  }
+  footer .about-section {
+    grid-row: 2/-1;
+    grid-column: span 4;
+    transform: translateY(-100px);
+  }
+  footer .social-copy-container {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  footer .social-copy-container .social-links a {
+    padding-inline: 1.5em;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 100vw;
+    max-width: 1200px;
+  }
+
+  .header-grid {
+    width: 100%;
+  }
+
+  .blog .blog-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer .contact-section,
+footer .newsletter-section,
+footer .about-section {
+    max-width: 400px;
+    padding: 0.5em;
+  }
+  footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 10em);
+  }
+  footer .contact-section {
+    grid-column: 1 span 1;
+    grid-row: 1;
+  }
+  footer .newsletter-section {
+    grid-column: 2 span 1;
+    grid-row: 1;
+    width: 100%;
+    padding-inline-end: 4em;
+  }
+  footer .about-section {
+    grid-row: 1;
+    grid-column: 3 span 1;
+    transform: translateY(0px);
   }
 }

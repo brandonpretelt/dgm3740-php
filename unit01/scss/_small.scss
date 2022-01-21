@@ -1,6 +1,7 @@
 body {
     background-color: var(--backgroundColor);
     font-family: var(--body-font);
+    font-size: var(--base-font-size) !important;
 }
 
 /** Layout Styles **/
@@ -11,19 +12,25 @@ body {
 }
 
 .site-nav-container {
+    --backgroundColor: rgb(0, 70, 135);
+    background-color: var(--backgroundColor);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.75em;
     transition: background 100ms ease-in-out;
     position: relative;
+    max-width: 100%;
+    a {
+        color: #fff;
+    }
 
     .mobile-menu {
         display: flex;
         flex-flow: column nowrap;
-        background-color: gray;
         position: absolute;
         top: -1em;
+        background-color: var(--backgroundColor);
         bottom: 0;
         left: 0;
         transform: translateX(-1000px);
@@ -37,6 +44,10 @@ body {
         transition: transform 450ms ease-in-out;
         // transition: width 450ms ease-in-out, height 450ms ease-in-out;
         overflow: initial;
+        a,
+        .li-heading {
+            color: #fff !important;
+        }
         span.material-icons-outlined.close-menu {
             display: block;
             margin-top: 1em;
@@ -107,28 +118,34 @@ body {
     }
 
     .menu-search {
+        margin-right: 0.2em;
         padding: 0.75em;
         .search-bar {
-            box-shadow: 0 0 10px 4px #ccc;
+            width: 50vw;
+            box-shadow: 0 0 10px 4px rgb(0 0 0 / 0.1);
             border: none;
             position: relative;
             padding: 0.75em;
-            border-top-left-radius: 3px;
-            border-bottom-left-radius: 3px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
         }
+
         .search-bar + button {
             cursor: pointer;
             border: none;
+            box-shadow: 0 0 10px 4px rgb(0 0 0 / 0.1);
             // box-shadow: 1.5em 0 10px 4px #ccc;
             position: absolute;
             background-color: #333;
             color: #fff;
             top: 1.5em;
-            right: 1.5em;
-            padding: 0.69em;
-            padding-bottom: 0.6em;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
+            right: 0.7em;
+            padding: 1em 0.75em;
+            padding-bottom: 0.5em;
+            // padding: 0.7em;
+            // padding-bottom: 0.7em;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
         }
         /* iOS stuff */
         .search-bar {
@@ -156,7 +173,9 @@ footer {
     section {
         margin-block: 1.5em;
     }
-    .contact-section {
+    .contact-section,
+    .newsletter-block,
+    .about-block {
         div {
             margin-block: 0.75em;
         }
@@ -318,6 +337,7 @@ footer {
             border: none;
             margin: 0 auto;
             font-size: 1.6rem;
+            background-color: gray;
         }
     }
 }
