@@ -21,7 +21,7 @@
         }
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(3, 10em);
+            grid-template-columns: minmax(repeat(3, 2fr), 100%);
         }
         .contact-section {
             grid-column: 1 span 1;
