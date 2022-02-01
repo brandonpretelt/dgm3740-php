@@ -1,0 +1,43 @@
+@media (min-width: 960px) {
+    .container {
+        width: 100vw;
+        max-width: 1200px;
+    }
+    .header-grid {
+        width: 100%;
+    }
+    .blog {
+        .blog-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    footer {
+        .contact-section,
+        .newsletter-section,
+        .about-section {
+            max-width: 400px;
+            padding: 0.5em;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 10em);
+        }
+        .contact-section {
+            grid-column: 1 span 1;
+            grid-row: 1;
+        }
+        .newsletter-section {
+            grid-column: 2 span 1;
+            grid-row: 1;
+            width: 100%;
+            padding-inline-end: 4em;
+        }
+        .about-section {
+            grid-row: 1;
+            grid-column: 3 span 1;
+
+            transform: translateY(0px);
+        }
+    }
+}
