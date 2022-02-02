@@ -3,3 +3,4 @@ module.exports = {
     open: "index.php",
     php: "/opt/lampp/bin/php"
 }
+// server stuff

@@ -561,6 +561,11 @@ footer .newsletter-block .signup + button {
     margin: 0 auto;
     max-width: 500px;
   }
+
+  /** CRUISE STUFF **/
+  #cruises h1 {
+    border: none !important;
+  }
 }
 @media (min-width: 960px) {
   .container {
@@ -601,4 +606,19 @@ footer .about-section {
     grid-column: 3 span 1;
     transform: translateY(0px);
   }
+}
+/**  CRUISE LAYOUT **/
+#cruises h1 {
+  border-top: 2px solid black;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 2.75rem;
+}
+#cruises .article-card__cruises {
+  padding: 1em;
+}
+#cruises .article-card__cruises .card-content {
+  width: 100%;
+  max-width: 100px;
 }
