@@ -1,5 +1,4 @@
 <?php include('includes/_top.php') ?>
-        <main>
             <section id="hero-section">
                 <!-- https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/tiny-slider.min.js use that instead -->
                 <div class="slider-container">
@@ -74,5 +73,4 @@
                     </article>
                 </div>
             </section>
-        </main>
 <?php include('includes/_bottom.php') ?>

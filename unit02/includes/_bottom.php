@@ -1,3 +1,4 @@
+</main>
 <footer>
             <div class="footer-grid">
                 <section class="contact-section">
