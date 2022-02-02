@@ -21,8 +21,8 @@
 
 
                         <ul class="drop-down">
-                            <li class="nav-link"><a href="agent-1.php">Some Agent</a></li>
-                            <li class="nav-link"><a href="agent-2.php">Some Agent</a></li>
+                            <li class="nav-link"><a href="agent-1.php">Agent 1</a></li>
+                            <li class="nav-link"><a href="agent-2.php">Agent 2</a></li>
                         </ul>
                     </li>
                     <li class="nav-link"><a href="book.php">Book</a></li>
