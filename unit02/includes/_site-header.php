@@ -9,8 +9,8 @@
                     <span class="material-icons-outlined close-menu">
                         close
                     </span>
-                    <li class="nav-link"><a href="#">Home</a></li>
-                    <li class="nav-link"><a href="#">Cruises</a></li>
+                    <li class="nav-link"><a href="index.php">Home</a></li>
+                    <li class="nav-link"><a href="cruises.php">Cruises</a></li>
                     <li class="nav-link">
                         <div class="li-heading">
                             Agents
@@ -21,11 +21,11 @@
 
 
                         <ul class="drop-down">
-                            <li class="nav-link"><a href="#">Some Agent</a></li>
-                            <li class="nav-link"><a href="#">Some Agent</a></li>
+                            <li class="nav-link"><a href="agent-1.php">Some Agent</a></li>
+                            <li class="nav-link"><a href="agent-2.php">Some Agent</a></li>
                         </ul>
                     </li>
-                    <li class="nav-link"><a href="book/index.php">Book</a></li>
+                    <li class="nav-link"><a href="book.php">Book</a></li>
                 </ul>
                 <div class="menu-search">
                     <input placeholder="Search..." type="search" name="search-bar" id="search-bar" class="search-bar">

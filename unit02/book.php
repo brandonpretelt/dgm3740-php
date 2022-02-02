@@ -1,3 +1,6 @@
-<?php include('./includes/_top.php') ?>
-<p> Hello world! </p>
-<?php include('./includes/_bottom.php') ?>
+<?php 
+    $title = 'Book';
+    include('includes/_top.php'); 
+?>
+<h1> Book </h1>
+<?php include('includes/_bottom.php') ?>

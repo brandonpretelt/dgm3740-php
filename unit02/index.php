@@ -1,4 +1,5 @@
-<?php include('includes/_top.php') ?>
+<?php $title='Home'; include('includes/_top.php') ?>
+
             <section id="hero-section">
                 <!-- https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/tiny-slider.min.js use that instead -->
                 <div class="slider-container">
