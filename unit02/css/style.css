@@ -611,7 +611,7 @@ footer .about-section {
   border-top: 2px solid black;
   width: 90vw;
   margin: 0 auto;
-  padding-block: 0.25em;
+  padding: 0.25em;
   font-size: 2.75rem;
   text-align: left;
 }
@@ -664,7 +664,9 @@ footer .about-section {
 }
 /* large cruise layout */
 @media (min-width: 960px) {
-  body {
-    background-color: var(--backgroundColor);
+  #cruises h1 {
+    margin: unset;
+    padding: 0.5em;
+    padding-bottom: 0;
   }
 }
