@@ -39,3 +39,37 @@ document.addEventListener('click', (e) => {
         dropdownMenu.classList.remove('open-dropdown-links');
     }
 });
+
+// this block of codes adds an active class to the current
+// list item
+
+const getURL = window.location.pathname;
+const paths = ['/index.php', '/cruises.php', '/agent-1.php', '/agent-2.php', '/book.php'];
+const getListItems = document.querySelectorAll('.nav-link');
+paths.forEach((path, index) => {
+    if (getURL === path) {
+        switch(index) {
+            case 0: 
+                getListItems[0].classList.toggle('active');
+                break;
+            case 1:
+                getListItems[1].classList.toggle('active');
+                break;
+            case 2:
+                getListItems[2].classList.toggle('active');
+                console.log(getListItems[3].textContent);
+                break;
+            case 3:
+                getListItems[3].classList.add('active');
+                getListItems[4].classList.add('active');
+                break;
+            case 4:
+                getListItems[5].classList.toggle('active');
+                break;
+            default:
+                console.log('nothing matches this');
+                break;          
+        }
+    }
+    
+})

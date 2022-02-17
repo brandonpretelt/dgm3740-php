@@ -4,6 +4,10 @@ body {
     font-size: var(--base-font-size) !important;
 }
 
+.active {
+    font-weight: bold;
+}
+
 /** Layout Styles **/
 /** TODO: Style search bar **/
 .container {
