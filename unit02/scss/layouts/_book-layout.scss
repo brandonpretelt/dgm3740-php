@@ -1,0 +1,74 @@
+/**  BOOK LAYOUT **/
+#book {
+    h1 {
+        border-top: 2px solid black;
+        width: 90vw;
+        margin: 0 auto;
+        padding: 0.25em;
+        font-size: 2.75rem;
+        text-align: center;
+    }
+    .article-card__cruises {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        .card-content {
+            width: 100%;
+            max-width: 100px;
+        }
+     
+    }
+    a.btn {
+        margin-top: 1em;
+        text-decoration: none;
+        display: block;
+        background-color: #efefef;
+        color: #000;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .btn.large-btn {
+        font-size: 1.75rem;
+        padding: 0.3em 0.74em;
+    }
+}
+
+/* medium cruise layout */
+@media (min-width: 700px) {
+    a.btn {
+        &:hover {
+            font-style: italic;
+        }
+    }
+    #cruises {
+        .article-card__cruises {
+            flex-flow: row;
+            gap: 2em;
+            div {
+                display: flex;
+                transform: translateY(50px);
+                flex-direction: column;
+                justify-content: center;
+                a.btn {
+                    margin-bottom: 2em;
+                    margin-left: auto;
+                    text-align: center;
+    
+                } 
+            }
+        }
+    }
+}
+
+/* large cruise layout */
+@media (min-width: 960px) {
+  #cruises {
+    h1 {
+       margin: unset;
+       padding: .5em;
+       padding-bottom: 0;
+    }
+  }
+}
