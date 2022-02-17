@@ -2,18 +2,36 @@
 #cruises {
     h1 {
         border-top: 2px solid black;
-        width: 90%;
+        width: 90vw;
         margin: 0 auto;
-        padding: 1em;
+        padding-block: 0.25em;
         font-size: 2.75rem;
+        text-align: left;
     }
-    .article-card {
-        &__cruises {
-            padding: 1em;
-            .card-content {
-                width: 100%;
-                max-width: 100px;
-            }
+    .article-card__cruises {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        .card-content {
+            width: 100%;
+            max-width: 100px;
         }
+     
+    }
+}
+
+/* medium cruise layout */
+@media (min-width: 700px) {
+    body {
+        background-color: currentColor;
+    }
+}
+
+/* large cruise layout */
+@media (min-width: 960px) {
+    body {
+        background-color: currentColor;
     }
 }

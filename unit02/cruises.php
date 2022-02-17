@@ -3,11 +3,30 @@
     <h1> Cruises </h1>
     <div class="cruise-container">
         <article class="article-card__cruises">
-            <figure class="card-content">
-                <figcaption>Carnival Cruise Fun For The Family</figcaption>
+            <figure class="card-content__cruises">
                     <img src="images/blog-images/family.jpg" alt="family image" loading="lazy">
-                    <p class="caption">January 1st, 2021</p>
             </figure>
+            <h2> Australia & New Zealand Cruises from $999! </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis ullam consequuntur nesciunt fugiat magni explicabo aut similique dicta rerum? Sequi aperiam atque sit odit earum! Facilis perferendis adipisci incidunt? </p>
+            <a href="#">Learn more!</a>
+        </article>
+        <article class="article-card__cruises">
+            <figure class="card-content__cruises">
+                    <img src="images/blog-images/family.jpg" alt="family image" loading="lazy">
+            </figure>
+            <h2> Australia & New Zealand Cruises from $999! </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis ullam consequuntur nesciunt fugiat magni explicabo aut similique dicta rerum? Sequi aperiam atque sit odit earum! Facilis perferendis adipisci incidunt? </p>
+                        <a href="#">Learn more!</a>
+
+        </article>
+        <article class="article-card__cruises">
+            <figure class="card-content__cruises">
+                    <img src="images/blog-images/family.jpg" alt="family image" loading="lazy">
+            </figure>
+            <h2> Australia & New Zealand Cruises from $999! </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis ullam consequuntur nesciunt fugiat magni explicabo aut similique dicta rerum? Sequi aperiam atque sit odit earum! Facilis perferendis adipisci incidunt? </p>
+                        <a href="#">Learn more!</a>
+
         </article>
                    
     </div>
