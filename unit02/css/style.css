@@ -589,7 +589,6 @@ footer .about-section {
   }
   footer .footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 10em);
   }
   footer .contact-section {
     grid-column: 1 span 1;
@@ -627,16 +626,45 @@ footer .about-section {
   width: 100%;
   max-width: 100px;
 }
+#cruises a.btn {
+  margin-top: 1em;
+  text-decoration: none;
+  display: block;
+  background-color: #efefef;
+  color: #000;
+  text-align: center;
+  border-radius: 10px;
+}
+#cruises .btn.large-btn {
+  font-size: 1.75rem;
+  padding: 0.3em 0.74em;
+}
 
 /* medium cruise layout */
 @media (min-width: 700px) {
-  body {
-    background-color: currentColor;
+  a.btn:hover {
+    font-style: italic;
+  }
+
+  #cruises .article-card__cruises {
+    flex-flow: row;
+    gap: 2em;
+  }
+  #cruises .article-card__cruises div {
+    display: flex;
+    transform: translateY(50px);
+    flex-direction: column;
+    justify-content: center;
+  }
+  #cruises .article-card__cruises div a.btn {
+    margin-bottom: 2em;
+    margin-left: auto;
+    text-align: center;
   }
 }
 /* large cruise layout */
 @media (min-width: 960px) {
   body {
-    background-color: currentColor;
+    background-color: var(--backgroundColor);
   }
 }

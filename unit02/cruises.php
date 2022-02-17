@@ -6,26 +6,33 @@
             <figure class="card-content__cruises">
                     <img src="images/blog-images/family.jpg" alt="family image" loading="lazy">
             </figure>
-            <h2> Australia & New Zealand Cruises from $999! </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis ullam consequuntur nesciunt fugiat magni explicabo aut similique dicta rerum? Sequi aperiam atque sit odit earum! Facilis perferendis adipisci incidunt? </p>
-            <a href="#">Learn more!</a>
+            <div>
+                <h2> Australia & New Zealand Cruises from $999! </h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis ullam consequuntur nesciunt fugiat magni explicabo aut similique dicta rerum? Sequi aperiam atque sit odit earum! Facilis perferendis adipisci incidunt? </p>
+                <a href="#" class="btn large-btn">Read More</a>
+            </div>
         </article>
         <article class="article-card__cruises">
             <figure class="card-content__cruises">
                     <img src="images/blog-images/family.jpg" alt="family image" loading="lazy">
             </figure>
-            <h2> Australia & New Zealand Cruises from $999! </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis ullam consequuntur nesciunt fugiat magni explicabo aut similique dicta rerum? Sequi aperiam atque sit odit earum! Facilis perferendis adipisci incidunt? </p>
-                        <a href="#">Learn more!</a>
+            <div>
+                <h2> Australia & New Zealand Cruises from $999! </h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis ullam consequuntur nesciunt fugiat magni explicabo aut similique dicta rerum? Sequi aperiam atque sit odit earum! Facilis perferendis adipisci incidunt? </p>
+                            <a href="#" class="btn large-btn">Read More</a>
+            </div>
 
         </article>
         <article class="article-card__cruises">
-            <figure class="card-content__cruises">
-                    <img src="images/blog-images/family.jpg" alt="family image" loading="lazy">
-            </figure>
-            <h2> Australia & New Zealand Cruises from $999! </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis ullam consequuntur nesciunt fugiat magni explicabo aut similique dicta rerum? Sequi aperiam atque sit odit earum! Facilis perferendis adipisci incidunt? </p>
-                        <a href="#">Learn more!</a>
+           
+                <figure class="card-content__cruises">
+                        <img src="images/blog-images/family.jpg" alt="family image" loading="lazy">
+                </figure>
+                <div>
+                <h2> Australia & New Zealand Cruises from $999! </h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis ullam consequuntur nesciunt fugiat magni explicabo aut similique dicta rerum? Sequi aperiam atque sit odit earum! Facilis perferendis adipisci incidunt? </p>
+                            <a href="#" class="btn large-btn">Read More</a>
+            </div>
 
         </article>
                    
