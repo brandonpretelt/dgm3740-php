@@ -2,7 +2,7 @@
 <section id="agent">
     <h1>Wendy Wadsworth 2</h1>
     <figure>
-        <img src="#" alt="picture of the agent">
+        <img src="images/agents/agent-1a.jpg" alt="picture of the agent">
     </figure>
     <article>
     <div class="contact-info">
