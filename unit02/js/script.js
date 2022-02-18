@@ -44,8 +44,10 @@ document.addEventListener('click', (e) => {
 // list item
 
 const getURL = window.location.pathname;
+// hard coded array values are not ideal but, it's workable for now
 const paths = ['/index.php', '/cruises.php', '/agent-1.php', '/agent-2.php', '/book.php'];
 const getListItems = document.querySelectorAll('.nav-link');
+console.log(getListItems);
 paths.forEach((path, index) => {
     if (getURL === path) {
         switch(index) {
@@ -57,11 +59,9 @@ paths.forEach((path, index) => {
                 break;
             case 2:
                 getListItems[2].classList.toggle('active');
-                console.log(getListItems[3].textContent);
                 break;
             case 3:
-                getListItems[3].classList.add('active');
-                getListItems[4].classList.add('active');
+                getListItems[2].classList.add('active');
                 break;
             case 4:
                 getListItems[5].classList.toggle('active');
