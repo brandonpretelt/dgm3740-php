@@ -13,7 +13,6 @@
 
 /* medium cruise layout */
 @media (min-width: 700px) {
-
     #agent {
         h1 {
             border: none;
@@ -30,11 +29,15 @@
 
 /* large cruise layout */
 @media (min-width: 960px) {
-#agent {
-    figure {
-        img {
-            width: 20vw;
+    #agent {
+        h1 {
+            width: auto;
+            text-align: left;
+        }
+        figure {
+            img {
+                width: 20vw;
+            }
         }
     }
-}
 }

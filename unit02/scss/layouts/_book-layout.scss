@@ -18,7 +18,6 @@
             width: 100%;
             max-width: 100px;
         }
-     
     }
     a.btn {
         margin-top: 1em;
@@ -33,6 +32,26 @@
         font-size: 1.75rem;
         padding: 0.3em 0.74em;
     }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .form-control-container {
+            width: 100%;
+            padding: 1em;
+
+            .form-control {
+                width: 100%;
+            }
+            .btn {
+                margin: 0 auto;
+                width: 90vw;
+                border: none;
+                border-radius: 20px;
+            }
+        }
+    }
 }
 
 /* medium cruise layout */
@@ -42,33 +61,28 @@
             font-style: italic;
         }
     }
-    #cruises {
-        .article-card__cruises {
-            flex-flow: row;
-            gap: 2em;
-            div {
-                display: flex;
-                transform: translateY(50px);
-                flex-direction: column;
-                justify-content: center;
-                a.btn {
-                    margin-bottom: 2em;
-                    margin-left: auto;
-                    text-align: center;
-    
-                } 
-            }
+    #book {
+        form {
+            align-items: flex-start;
+            max-width: 50%;
+        }
+
+        .btn {
+            max-width: 100%;
         }
     }
 }
 
 /* large cruise layout */
 @media (min-width: 960px) {
-  #cruises {
-    h1 {
-       margin: unset;
-       padding: .5em;
-       padding-bottom: 0;
+    #book {
+        h1 {
+            margin: unset;
+            padding: 0.5em;
+            padding-bottom: 0;
+            border-top: none !important;
+            width: auto !important;
+            text-align: left;
+        }
     }
-  }
 }

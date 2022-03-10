@@ -45,13 +45,19 @@ document.addEventListener('click', (e) => {
 
 const getURL = window.location.pathname;
 // hard coded array values are not ideal but, it's workable for now
-const paths = ['/index.php', '/cruises.php', '/agent-1.php', '/agent-2.php', '/book.php'];
+const paths = [
+    '/index.php',
+    '/cruises.php',
+    '/agent-1.php',
+    '/agent-2.php',
+    '/book.php'
+];
 const getListItems = document.querySelectorAll('.nav-link');
 console.log(getListItems);
 paths.forEach((path, index) => {
     if (getURL === path) {
-        switch(index) {
-            case 0: 
+        switch (index) {
+            case 0:
                 getListItems[0].classList.toggle('active');
                 break;
             case 1:
@@ -68,8 +74,18 @@ paths.forEach((path, index) => {
                 break;
             default:
                 console.log('nothing matches this');
-                break;          
+                break;
         }
     }
-    
-})
+});
+
+const stateSelect = document.querySelector('[data-select="state"]');
+console.log(stateSelect);
+
+states.forEach((state) => {
+    console.log(state.name, ' here here here');
+    const option = document.createElement('option');
+    option.value = state.name;
+    option.textContent = state.name;
+    stateSelect.appendChild(option);
+});

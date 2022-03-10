@@ -104,6 +104,7 @@
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/jquery/image-slider.js"></script>
+    <script src="js/states.js"></script>
     <script src="js/script.js"></script>
     <script type="application/ld+json">
             {

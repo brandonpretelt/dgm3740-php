@@ -1,6 +1,6 @@
 <?php $title='Agent 1'; include('includes/_top.php') ?>
 <section id="agent">
-    <h1>Wendy Wadsworth</h1>
+    <h1>Robert Wadsworth</h1>
     <figure>
         <img src="images/agents/agent-2.jpg" alt="picture of the agent">
     </figure>
