@@ -110,7 +110,9 @@ body {
     color: #fff
 }
 
-.site-nav-container .mobile-menu {
+.site-nav-container .mobile-menu,
+.site-nav-container .menu,
+.site-nav-container #menu-main-menu {
     --backgroundColor: rgb(0, 70, 135);
     box-shadow: 0 0 10px rgba(0, 0, 0, .6);
     display: flex;
@@ -153,12 +155,12 @@ body {
     transform: rotate(180deg)
 }
 
-.site-nav-container .mobile-menu .nav-link {
+.site-nav-container .mobile-menu .menu-item {
     margin-top: 2em;
     padding: .75em
 }
 
-.site-nav-container .mobile-menu .nav-link:nth-child(4) .li-heading {
+.site-nav-container .mobile-menu .menu-item:nth-child(4) .li-heading {
     font-size: 1.4rem !important;
     cursor: pointer;
     display: flex;
@@ -166,7 +168,7 @@ body {
     justify-content: space-between
 }
 
-.site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down {
+.site-nav-container .mobile-menu .menu-item:nth-child(4) .drop-down {
     background-color: var(--brandColor) !important;
     height: 0;
     padding: 0;
@@ -176,21 +178,21 @@ body {
     transition: height 100ms ease-in-out, opacity 25ms ease-in
 }
 
-.site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down li {
+.site-nav-container .mobile-menu .menu-item:nth-child(4) .drop-down li {
     max-width: 100%
 }
 
-.site-nav-container .mobile-menu .nav-link:nth-child(4) .drop-down a {
+.site-nav-container .mobile-menu .menu-item:nth-child(4) .drop-down a {
     font-size: 1.2rem
 }
 
-.site-nav-container .mobile-menu .nav-link:nth-child(4) .open-dropdown-links {
+.site-nav-container .mobile-menu .menu-item:nth-child(4) .open-dropdown-links {
     display: block;
     opacity: 1 !important;
     height: auto !important
 }
 
-.site-nav-container .mobile-menu .nav-link a {
+.site-nav-container .mobile-menu .menu-item a {
     font-size: 1.4rem;
     color: #000;
     text-decoration: none
