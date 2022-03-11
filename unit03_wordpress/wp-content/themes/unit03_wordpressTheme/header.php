@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href=" <?php echo get_template_directory_uri(); ?>/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
    
     <title>WordPress Unit 03 | <?php  wp_title(); ?></title>
 
@@ -28,8 +28,10 @@
 
                 <?php wp_nav_menu(array(
                     'container' => '',
+                    'items_wrap' => '<ul class="nav mobile-menu"><span class="material-icons-outlined close-menu">close</span>%3$s</ul>',
                     'menu' => 'site-nav-container',
-                    'menu_class' => 'nav mobile-menu'
+                    'menu_class' => 'nav mobile-menu',
+                    'add_li_class' => 'nav-link'
                 )); ?>
 
                 <div class="menu-search">
@@ -45,10 +47,10 @@
 
                 <div class="site-info">
                     <figure class="logo">
-                        <img src="images/3x/cabot_cruises@3x.png" srcset="
-                                images/1x/cabot_cruises@1.png 1x,
-                                images/2x/cabot_cruises@2x.png 2x,
-                                images/3x/cabot_cruises@3x.png 3x
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/3x/cabot_cruises@3x.png" srcset="
+                                <?php echo get_template_directory_uri(); ?>/images/1x/cabot_cruises@1.png 1x,
+                                <?php echo get_template_directory_uri(); ?>/images/2x/cabot_cruises@2x.png 2x,
+                                <?php echo get_template_directory_uri(); ?>/images/3x/cabot_cruises@3x.png 3x
                             " alt="img src" loading="lazy">
                     </figure>
                     <div id="site-tel-number">

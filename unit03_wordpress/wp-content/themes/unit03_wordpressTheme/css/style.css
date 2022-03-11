@@ -84,9 +84,10 @@ body {
     font-size: var(--base-font-size) !important
 }
 
-.active {
+.active,
+.current-menu-item {
     font-weight: bold;
-    text-transform: lowercase
+    text-transform: uppercase;
 }
 
 .container {
@@ -156,7 +157,7 @@ body {
 }
 
 .site-nav-container .mobile-menu .menu-item {
-    margin-top: 2em;
+    /* margin-top: 2em; */
     padding: .75em
 }
 

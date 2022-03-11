@@ -103,8 +103,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/jquery/image-slider.js"></script>
-    <script src="js/script.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery/image-slider.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
     <script type="application/ld+json">
             {
                 "@context": "http://schema.org",
