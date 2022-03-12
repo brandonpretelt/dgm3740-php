@@ -6,8 +6,20 @@ const closeBtn = document.querySelector('.close-menu');
 const openBtn = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.mobile-menu');
 const dropdown = document.querySelector('.open-dropdown');
-const dropdownMenu = document.querySelector('.drop-down');
+// const dropdownMenu = document.querySelector('.drop-down');
+const dropdownMenu = document.querySelector('.sub-menu');
 const liToggle = document.querySelector('.li-heading');
+const preventAnchorDefault = document.querySelector('.prevent-default a');
+const preventLIDefault = document.querySelector('.prevent-default');
+
+preventAnchorDefault.addEventListener('click', (e) => {
+    e.preventDefault();
+});
+
+preventLIDefault.addEventListener('click', () => {
+    console.log('heyyooo');
+    document.querySelector('.menu-item-16').classList.toggle('open');
+});
 
 openBtn.addEventListener('click', () => {
     menu.classList.toggle('open-menu');

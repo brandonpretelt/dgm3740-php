@@ -31,7 +31,8 @@
                     'items_wrap' => '<ul class="nav mobile-menu"><span class="material-icons-outlined close-menu">close</span>%3$s</ul>',
                     'menu' => 'site-nav-container',
                     'menu_class' => 'nav mobile-menu',
-                    'add_li_class' => 'nav-link'
+                    'add_li_class' => 'nav-link closed',
+                    'depth' => '0',
                 )); ?>
 
                 <div class="menu-search">
