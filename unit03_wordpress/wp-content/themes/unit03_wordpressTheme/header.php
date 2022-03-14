@@ -62,4 +62,4 @@
         </div>
 
         <main>
-
+<section class="blog">

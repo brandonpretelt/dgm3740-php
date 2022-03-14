@@ -1,3 +1,4 @@
+</section>
 </main>
         <footer>
             <div class="footer-grid">
