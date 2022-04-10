@@ -2,6 +2,7 @@ body {
     background-color: var(--backgroundColor);
     font-family: var(--body-font);
     font-size: var(--base-font-size) !important;
+    overflow-x: hidden;
 }
 
 .active {

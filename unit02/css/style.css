@@ -81,12 +81,13 @@ select {
 body {
     background-color: var(--backgroundColor);
     font-family: var(--body-font);
-    font-size: var(--base-font-size) !important
+    font-size: var(--base-font-size) !important;
+    overflow-x: hidden
 }
 
 .active {
     font-weight: bold;
-    text-transform: lowercase
+    text-transform: uppercase
 }
 
 .container {
