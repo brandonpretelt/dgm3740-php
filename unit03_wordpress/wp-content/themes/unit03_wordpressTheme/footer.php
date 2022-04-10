@@ -96,7 +96,7 @@
                 </div>
                 <small class="copyright-info">
                     &copy; <span class="date"></span> Brandon Pretelt &bull;
-                    <a href="https://brandonpretelt.com">brandonpretelt(dot)com</a>
+                    <a href="http://dgm3740.brandonpretelt.com/wordpress/wp-admin/">admin login</a>
                 </small>
             </div>
         </footer>

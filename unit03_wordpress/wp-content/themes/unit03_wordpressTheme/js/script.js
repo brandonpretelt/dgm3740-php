@@ -15,9 +15,22 @@ const getMenuItemsParent = document.querySelector('.menu-item-has-children');
 
 submenuAnchor.classList.add('sub-menu-toggle');
 
+const vw = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+);
+
+console.log(vw);
 getMenuItemsParent.addEventListener('click', () => {
     dropdownMenu.classList.toggle('open-menu-items');
 });
+if (vw > 697) {
+    getMenuItemsParent.addEventListener('mouseenter', () => {
+        dropdownMenu.classList.toggle('open-menu-items');
+    });
+} else {
+    dropdownMenu.classList.add('open-menu-items');
+}
 
 /* preventAnchorDefault.addEventListener('click', (e) => {
     e.preventDefault();

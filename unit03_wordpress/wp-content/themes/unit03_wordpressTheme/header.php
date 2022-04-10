@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
    
-    <title>WordPress Unit 03 | <?php  wp_title(); ?></title>
+    <title>WordPress Unit 03 ||| <?php  wp_title(); ?></title>
 
 </head>
 
@@ -62,4 +62,4 @@
         </div>
 
         <main>
-<section class="blog">
+<section class="content-section agents-section about-us-section destinations">
