@@ -77,7 +77,7 @@ select {
 :root {
   --backgroundColor: hsl(191, 191, 191);
   --brandColor: rgb(0, 70, 135);
-  --body-font: "Oswald", sans-serif;
+  --body-font: "Oswald", system-ui, sans-serif;
   --base-font-size: 20px;
   --font-300: 300;
   --font-400: 400;
@@ -584,7 +584,7 @@ footer .about-section {
   }
   footer .footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 10em);
+    grid-template-columns: minmax(repeat(3, 2fr), 100%);
   }
   footer .contact-section {
     grid-column: 1 span 1;
