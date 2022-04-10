@@ -1,3 +1,7 @@
+# Updates
+Making a separate folder for each unit to show changes between each theme. 
+
+
 # DGM 3740
 
 ## Unit 01 HTML5 Template
