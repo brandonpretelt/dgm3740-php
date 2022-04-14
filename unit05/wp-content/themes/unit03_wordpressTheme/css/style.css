@@ -113,11 +113,10 @@ body {
 
 /* 
 .site-nav-container .sub-menu {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
+position: relative;
+list-style: none;
+margin: 0;
+padding: 0;
 } */
 
 /* ! add padding to a elements themselves for sub-menu */
@@ -149,11 +148,11 @@ ul.nav li {
 }
 
 /* .menu-item-has-children:hover>.sub-menu li {
-    position: absolute;
-    inset: 0;
-    display: block;
+position: absolute;
+inset: 0;
+display: block;
 }
- */
+*/
 
 .open-menu-items {
     position: initial;
@@ -171,28 +170,25 @@ ul.nav li {
 
 
 /* .sub-menu>li.menu-item {
-    display: none;
+display: none;
 }
-
 .sub-menu>li.menu-item.open,
 .open {
-    display: block;
+display: block;
 } */
 
 /* .sub-menu>li a {
-    background-color: var(--backgroundColor);
-    padding: 1em;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
+background-color: var(--backgroundColor);
+padding: 1em;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, .6);
 }
-
 .sub-menu>li a:last-child {
-
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
 }
- */
+*/
 .site-nav-container .mobile-menu,
 .site-nav-container .menu,
 .site-nav-container #menu-main-menu {
@@ -846,7 +842,7 @@ footer .newsletter-block .signup+button {
 }
 
 /* .agents-section {
-    padding: 1em;
+padding: 1em;
 } */
 
 
@@ -1032,12 +1028,12 @@ footer .newsletter-block .signup+button {
     .gallery {
         grid-template-columns: repeat(4, 1fr);
         /*         display: flex;
-        flex-flow: row wrap;
-        width: auto; */
+    flex-flow: row wrap;
+    width: auto; */
         /*         flex-flow: row wrap;
-        justify-content: flex-start;
-        width: 900px;
-        padding: 0.25em; */
+    justify-content: flex-start;
+    width: 900px;
+    padding: 0.25em; */
     }
 
     #cruises h1 {
@@ -1052,7 +1048,7 @@ footer .newsletter-block .signup+button {
 }
 
 /* .agents-section {
-    padding: 1em
+padding: 1em
 } */
 
 .agents-section h1 {
@@ -1069,6 +1065,18 @@ footer .newsletter-block .signup+button {
 }
 
 @media(min-width: 700px) {
+    .site-nav-container .mobile-menu {
+        transform: translateX(-25px);
+    }
+
+    .nav,
+    .mobile-menu {
+        background-color: transparent !important;
+    }
+
+    ul li {
+        white-space: nowrap;
+    }
 
     .map-container iframe {
         aspect-ratio: 16/9;
