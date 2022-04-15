@@ -706,10 +706,10 @@ footer .newsletter-block .signup+button {
 }
 
 @media(min-width: 960px) {
-    .container {
+    /*     .container {
         width: 100vw;
         max-width: 1200px;
-    }
+    } */
 
     .header-grid {
         width: 100%;
@@ -1064,7 +1064,157 @@ padding: 1em
     margin-block: 0.5em;
 }
 
+.wp-block-contact-form-7-contact-form-selector {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+/* form {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 90vw;
+    margin: 0 auto;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: .25em;
+}
+
+.date-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 10%;
+}
+
+.post-content-text .news-title>a,
+.news-content-excerpt>a {
+    color: rgb(224, 224, 224);
+    font-weight: bolder;
+
+}
+
+.date-post h2 {
+    padding: initial;
+}
+
+.news-inner-wrap-view {
+    background-color: var(--brandColor);
+    color: rgb(224, 224, 224);
+    padding: 1em;
+    margin-block-end: 2em;
+    border-radius: 10px;
+}
+
+.post-content-text {
+    width: 80%;
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+form textarea,
+form input {
+    width: 75vw;
+}
+
+form .form-control-contact {
+    margin-bottom: 1em;
+}
+
+form .wpcf7-submit {
+    width: 100%;
+}
+
+.lazy-load-gallery {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
+.lazy-load-gallery>img.lazy-load-item {
+    width: 100%;
+    height: auto;
+}
+
+/* #menu-item-145,
+#menu-item-141 {
+    padding-left: inherit;
+} */
+
+.news-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.news_pagination {
+    display: flex;
+    justify-content: center;
+    margin-inline: 0.25em;
+    padding-inline: 0.25em;
+    gap: 1em;
+}
+
+.news_pagination .next,
+.news_pagination .prev,
+.news_pagination .page-numbers {
+    padding: 0.75em;
+}
+
+.news_pagination .current {
+    background-color: hsl(209, 100%, 15%);
+    color: #fff;
+}
+
+.news_pagination .next,
+.news_pagination .prev {
+    background-color: hsl(209, 100%, 26%);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.grid-container {
+    margin-block-start: 4em;
+}
+
 @media(min-width: 700px) {
+
+    /*    #menu-item-145,
+    #menu-item-141 {
+        padding-left: 15px;
+    } */
+
+    .wp-block-contact-form-7-contact-form-selector {
+        display: block;
+        margin: 0 auto;
+    }
+
+    form {
+        display: block;
+        width: auto;
+    }
+
+    form textarea,
+    form input {
+        width: auto;
+    }
+
+    form .wpcf7-submit {
+        width: auto;
+    }
+
     .site-nav-container .mobile-menu {
         transform: translateX(-25px);
     }
@@ -1108,18 +1258,56 @@ padding: 1em
         grid-template-columns: repeat(var(--columns), 1fr);
     }
 
-    .grid-container p {
+    .grid-container div {
         padding-inline: 0.25em;
         border-right: 2px solid rgb(0 0 0 / .5);
+    }
+
+    .grid-container div:nth-child(2),
+    .grid-container div:last-child {
+        border: none;
+    }
+
+
+
+
+
+
+    .news-img-container {
+        display: block;
+        float: right;
+    }
+
+}
+
+@media(min-width: 960px) {
+
+    .grid-container div:nth-child(3),
+    .grid-container div:last-child {
+        border: none;
+    }
+
+    .grid-container div:nth-child(2) {
+        border-right: 2px solid rgb(0 0 0 / .5);
+
+    }
+
+    .grid-container div:last-child {
+        grid-column: 1 / span var(--columns);
+        width: 100%;
+        text-align: center;
+    }
+
+    .grid-container div:last-child {
+        grid-column: 1 / span var(--columns);
+        width: 100%;
+        text-align: center;
     }
 
     .grid-container p:last-child {
         border-right: none;
     }
 
-}
-
-@media(min-width: 960px) {
     .agents-section h1 {
         width: auto;
         text-align: left
