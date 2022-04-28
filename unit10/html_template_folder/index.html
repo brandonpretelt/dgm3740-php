@@ -5,45 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
     <title>HOME || Dreamer's Vacation LLC </title>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
     <!-- <?php echo get_template_directory_uri(); ?>/ -->
 </head>
 
 <body>
     <div>
-        <main>
-            <section class="site-head">
-                <header>
-                    <h3> Dreamer's Vacation </h3>
+        <section class="site-head">
+            <nav>
+                <div class="menu-toggle"><span class="material-icons-outlined open"> menu </span></div>
+                <ul class="menu">
+                    <span class="material-icons-outlined close-menu close">
+                        close
+                    </span>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Resorts</a> </li>
+                    <li><a href="#">Popular Destinations</a> </li>
+                    <li><a href="#">Partners</a> </li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="search" placeholder="search...">
+                </div>
+            </nav>
+
+
+            <header>
+                <div>
                     <p> The logo goes here </p>
-                </header>
-                <nav>
-                    <ul class="nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Test 1</a></li>
-                        <li><a href="#">Test 2</a></li>
-                        <li><a href="#">Test 3</a></li>
-                    </ul>
-                    <div class="search-bar">
-                        <input type="search" placeholder="search...">
-                    </div>
-                </nav>
-            </section>
+                </div>
+            </header>
+        </section>
+
+        <main>
+
 
             <section class="main-content">
                 <h1> This is the main content!! </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat a alias facere mollitia earum totam
-                    sint sunt sed quidem esse?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam impedit sunt quasi nihil,
+                    unde eum ipsam necessitatibus eius aliquam deserunt obcaecati corporis doloremque sint voluptatem
+                    sapiente nesciunt recusandae ab reprehenderit facilis minus perspiciatis. Beatae rerum consectetur
+                    quis facere ratione? Quas ad quo praesentium autem provident dignissimos, expedita facere nihil
+                    reiciendis! Aliquam vitae quasi corrupti, voluptates sed amet recusandae rem earum consectetur ex,
+                    nam corporis repudiandae modi quisquam suscipit exercitationem consequatur, sunt veritatis autem
+                    iure excepturi? Impedit quaerat corrupti vero odit voluptatem beatae aut, ipsa sint odio commodi
+                    mollitia nam, ad praesentium! Blanditiis qui unde reprehenderit rerum autem suscipit quae.</p>
             </section>
 
 
 
         </main>
-        <footer></footer>
+        <footer>
+            <section class="social-links">
+                <a href="#"><span class="" social-link-item></span></a>
+                <a href="#"><span class="" social-link-item></span></a>
+                <a href="#"><span class="" social-link-item></span></a>
+                <a href="#"><span class="" social-link-item></span></a>
+            </section>
+            <div class="admin-area">
+                <a href="http://dreamersvacation-3740.brandonpretelt.com/wordpress/wp-login.php" class="link-btn"
+                    target="_blank">admin@brandonpretelt.com</a>
+            </div>
+        </footer>
     </div>
 </body>
 

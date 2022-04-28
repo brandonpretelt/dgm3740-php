@@ -1,48 +1,101 @@
 @import 'https://unpkg.com/open-props';
 :root {
   --clr-neutral-400: var(--gray-3);
+  --clr-link-400: var(--gray-1);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+@media (min-width: 20rem) {
+  nav {
+    display: flex;
+    transform: translateY(10px);
+    width: 100%;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  nav .menu-toggle {
+    cursor: pointer;
+  }
+  nav .menu-toggle .open {
+    color: var(--clr-link-400);
+    font-size: var(--size-9);
+  }
+  nav .menu {
+    display: flex;
+    flex-flow: column nowrap;
+    transform: translateX(-1000px);
+    overflow-x: hidden;
+    transition: transform 100ms ease-in-out;
+    position: absolute;
+    height: 100vh;
+    max-height: auto;
+    background-color: #265973;
+    inset: 0;
+    top: -1em;
+    width: 300px;
+    z-index: 2;
+    list-style: none;
+    transition: transform 450ms ease-in-out;
+  }
+  nav .menu li {
+    padding: 1em;
+    margin-block-start: 1em;
+  }
+  nav .menu li:first-child {
+    margin-block-start: 0.5em;
+  }
+  nav .menu li a {
+    font-weight: bold;
+    color: var(--clr-link-400);
+    font-size: var(--size-7);
+  }
+  nav .open-menu {
+    transform: translateX(0px);
+  }
+  nav .open-menu .close-menu,
+nav .open-menu span.close {
+    display: block;
+    color: var(--clr-link-400);
+    margin-left: auto;
+    cursor: pointer;
+    padding-block-start: 1em;
+    padding-inline: 1.75em;
+    height: 44px;
+    width: 44px;
+  }
+}
 body {
   background-color: var(--clr-neutral-400);
 }
 
 .site-head {
-  align-items: center;
-  justify-content: space-between;
   background-color: hsl(200deg, 50%, 50%);
 }
 .site-head .search-bar input[type=search] {
   background-color: #fff;
 }
 
-.site-head,
-nav ul {
-  display: flex;
-  padding: 1em;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-nav ul {
-  list-style: none;
-  gap: 1em;
-  margin-top: 0.25em;
-  margin-top: 1em;
-  margin-right: 1.25em;
-}
-nav ul li a {
-  font-weight: bold;
-  color: hsl(180deg, 10%, 90%);
-}
-
 .site-head {
   color: #000;
 }
-.site-head nav {
-  transform: translateY(10px);
+.site-head header {
+  background-color: var(--gray-4);
+}
+.site-head header div {
+  display: flex;
+  align-items: flex-end;
 }
 
 .main-content {
@@ -53,3 +106,57 @@ nav ul li a {
 .main-content h1 {
   font-weight: bold;
 }
+
+@media (min-width: 640px) {
+  nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 2em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  nav .menu-toggle {
+    display: none;
+  }
+  nav .menu {
+    display: flex;
+    margin-top: 1em;
+    grid-row: 1/-1;
+    grid-column: span 2;
+    background-color: transparent;
+    flex-flow: row nowrap;
+    transform: translateX(0px);
+    transition: none;
+    position: none;
+    height: initial;
+    max-height: initial;
+    inset: initial;
+    width: auto;
+    z-index: 2;
+    list-style: none;
+  }
+  nav .menu li {
+    padding: 1em;
+    margin-block-start: 1em;
+  }
+  nav .menu li:first-child {
+    margin-block-start: 0.5em;
+  }
+  nav .search-bar {
+    grid-row: 2;
+    grid-column: span 2;
+    margin-top: 1em;
+  }
+  nav .open-menu {
+    transform: initial;
+  }
+  nav .open-menu .material-icons-outlined.close-menu.close {
+    display: none;
+  }
+}
+/** MENU STYLES came from 
+https://github.com/paulcheney/mobile-menu-v5/
+**/
