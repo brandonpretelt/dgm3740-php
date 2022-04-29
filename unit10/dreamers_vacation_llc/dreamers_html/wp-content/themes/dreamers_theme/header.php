@@ -26,16 +26,7 @@
                     'menu_class' => 'menu',
                     'depth' => '0',
                 )) ?>
-                <!-- <ul class="menu">
-                    <span class="material-icons-outlined close-menu close">
-                        close
-                    </span>
-                    <li><a href="#">Home</a> </li>
-                    <li><a href="#">Resorts</a> </li>
-                    <li><a href="#">Popular Destinations</a> </li>
-                    <li><a href="#">Partners</a> </li>
-                    <li><a href="#">About Us</a></li>
-                </ul> -->
+
                 <div class="search-bar">
                     <input type="search" placeholder="search...">
                 </div>

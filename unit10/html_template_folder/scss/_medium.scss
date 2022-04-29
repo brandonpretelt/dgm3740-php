@@ -1,4 +1,15 @@
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
+    .site-head {
+        display: grid;
+        header {
+            grid-row: 1;
+            figure {
+                width: 100px;
+                padding: 0;
+            }
+        }
+    }
+
     nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -43,6 +54,7 @@
         }
         .open-menu {
             transform: initial;
+            margin: initial;
         }
         .material-icons-outlined.close-menu.close {
             display: none;

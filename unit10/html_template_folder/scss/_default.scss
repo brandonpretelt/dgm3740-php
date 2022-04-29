@@ -17,10 +17,16 @@ body {
 .site-head {
     color: #000;
     header {
-        background-color: var(--gray-4);
-        div {
+        background-color: var(--clr-neutral-400);
+        figure {
             display: flex;
             align-items: flex-end;
+            width: 150px;
+            padding: 0.75em;
+            img {
+                max-width: 100%;
+                display: block;
+            }
         }
     }
 }

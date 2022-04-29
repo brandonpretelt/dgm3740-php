@@ -75,19 +75,53 @@ nav .open-menu span.close {
     height: 44px;
     width: 44px;
   }
+  nav .open-menu li {
+    margin-inline-start: 1em;
+  }
 }
+/** default breakpoint **/
 footer {
   text-align: center;
 }
 footer .social-links {
+  padding: 2em;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-content: center;
   justify-items: center;
   width: 100%;
   margin: 0 auto;
+  max-width: 50em;
+}
+footer .social-links a {
+  padding-bottom: 0.35em;
 }
 
+/** medium breakpoint **/
+@media (min-width: 40rem) {
+  footer {
+    max-width: 70em;
+  }
+  footer .social-links {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  footer .social-links a {
+    margin-bottom: 1em;
+  }
+}
+/** large breakpoint **/
+@media (min-width: 58rem) {
+  footer {
+    margin: 0 auto;
+    max-width: 40em;
+  }
+  footer .social-links {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 body {
   background-color: var(--clr-neutral-400);
   line-height: 2;
@@ -104,11 +138,17 @@ body {
   color: #000;
 }
 .site-head header {
-  background-color: var(--gray-4);
+  background-color: var(--clr-neutral-400);
 }
-.site-head header div {
+.site-head header figure {
   display: flex;
   align-items: flex-end;
+  width: 150px;
+  padding: 0.75em;
+}
+.site-head header figure img {
+  max-width: 100%;
+  display: block;
 }
 
 .main-content {
@@ -123,7 +163,18 @@ body {
   font-size: var(--size-6);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
+  .site-head {
+    display: grid;
+  }
+  .site-head header {
+    grid-row: 1;
+  }
+  .site-head header figure {
+    width: 100px;
+    padding: 0;
+  }
+
   nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -168,6 +219,7 @@ body {
   }
   nav .open-menu {
     transform: initial;
+    margin: initial;
   }
   nav .material-icons-outlined.close-menu.close {
     display: none;
@@ -183,6 +235,14 @@ body {
     grid-column: 2/span 1;
     width: 25vw;
     margin-left: auto;
+  }
+
+  footer {
+    margin: 0 auto;
+    max-width: 40em;
+  }
+  footer .social-links {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 /** MENU STYLES came from 
