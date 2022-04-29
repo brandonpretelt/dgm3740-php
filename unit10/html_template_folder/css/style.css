@@ -236,14 +236,6 @@ body {
     width: 25vw;
     margin-left: auto;
   }
-
-  footer {
-    margin: 0 auto;
-    max-width: 40em;
-  }
-  footer .social-links {
-    grid-template-columns: repeat(5, 1fr);
-  }
 }
 /** MENU STYLES came from 
 https://github.com/paulcheney/mobile-menu-v5/
