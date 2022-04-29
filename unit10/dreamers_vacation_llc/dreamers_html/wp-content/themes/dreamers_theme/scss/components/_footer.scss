@@ -1,11 +1,45 @@
+/** default breakpoint **/
 footer {
+    text-align: center;
+    .footer-about {
+        margin-top: 1em;
+    }
     .social-links {
+        padding: 2em;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         align-content: center;
         justify-items: center;
         width: 100%;
         margin: 0 auto;
+        max-width: 50em;
+        a {
+            padding-bottom: 0.35em;
+        }
     }
-    text-align: center;
+}
+/** medium breakpoint **/
+@media (min-width: 40rem) {
+    footer {
+        max-width: 70em;
+        .social-links {
+            padding: 1em;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            a {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+/** large breakpoint **/
+@media (min-width: 58rem) {
+    footer {
+        margin: 0 auto;
+        max-width: 40em;
+        .social-links {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
 }

@@ -1,4 +1,31 @@
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
+    .site-head {
+        display: grid;
+        header {
+            grid-row: 1;
+            figure {
+                width: 100px;
+                padding: 0;
+            }
+        }
+    }
+
+    .main-content {
+        clear: both;
+        & > figure {
+            float: left;
+            img {
+                max-width: 100%;
+                display: block;
+            }
+        }
+        .partners-list {
+            .partners {
+                flex-flow: row wrap;
+            }
+        }
+    }
+
     nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -43,6 +70,7 @@
         }
         .open-menu {
             transform: initial;
+            margin: initial;
         }
         .material-icons-outlined.close-menu.close {
             display: none;

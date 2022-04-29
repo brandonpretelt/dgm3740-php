@@ -34,9 +34,9 @@
 
 
             <header>
-                <div>
-                    <p> The logo goes here </p>
-                </div>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo">
+                </figure>
             </header>
         </section>
 
