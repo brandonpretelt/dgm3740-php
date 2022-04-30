@@ -238,9 +238,6 @@ body {
   .main-content {
     clear: both;
   }
-  .main-content > figure {
-    float: left;
-  }
   .main-content > figure img {
     max-width: 100%;
     display: block;
